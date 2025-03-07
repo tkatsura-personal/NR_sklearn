@@ -1,0 +1,192 @@
+['sex', 'wt4', 'wt8', 'rbg4', 'rbg8']
+{'criterion': 'gini', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.86      0.91      0.89       154
+        True       0.69      0.58      0.63        53
+
+    accuracy                           0.83       207
+   macro avg       0.78      0.75      0.76       207
+weighted avg       0.82      0.83      0.82       207
+
+
+['sex', 'wtpt4', 'wtpt8', 'rbg4', 'rbg8']
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.81      1.00      0.90       150
+        True       1.00      0.36      0.53        55
+
+    accuracy                           0.83       205
+   macro avg       0.91      0.68      0.71       205
+weighted avg       0.86      0.83      0.80       205
+
+
+['sex', 'wt4', 'wt8', 'wt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'entropy', 'max_depth': 7, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.92      0.89       140
+        True       0.69      0.56      0.62        45
+
+    accuracy                           0.83       185
+   macro avg       0.78      0.74      0.76       185
+weighted avg       0.82      0.83      0.83       185
+
+
+['sex', 'wtpt4', 'wtpt8', 'wtpt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'gini', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.84      0.99      0.91       140
+        True       0.94      0.37      0.53        43
+
+    accuracy                           0.85       183
+   macro avg       0.89      0.68      0.72       183
+weighted avg       0.86      0.85      0.82       183
+
+
+['sex', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.86      0.80      0.83       154
+        True       0.52      0.62      0.56        53
+
+    accuracy                           0.75       207
+   macro avg       0.69      0.71      0.70       207
+weighted avg       0.77      0.75      0.76       207
+
+
+['sex', 'gestational_diet', 'wtpt4', 'wtpt8', 'rbg4', 'rbg8']
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.81      1.00      0.90       150
+        True       1.00      0.36      0.53        55
+
+    accuracy                           0.83       205
+   macro avg       0.91      0.68      0.71       205
+weighted avg       0.86      0.83      0.80       205
+
+
+['sex', 'gestational_diet', 'wt4', 'wt8', 'wt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'gini', 'max_depth': 5, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.85      0.98      0.91       140
+        True       0.87      0.44      0.59        45
+
+    accuracy                           0.85       185
+   macro avg       0.86      0.71      0.75       185
+weighted avg       0.85      0.85      0.83       185
+
+
+['sex', 'gestational_diet', 'wtpt4', 'wtpt8', 'wtpt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'entropy', 'max_depth': 9, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.89      0.94      0.91       140
+        True       0.76      0.60      0.68        43
+
+    accuracy                           0.86       183
+   macro avg       0.83      0.77      0.79       183
+weighted avg       0.86      0.86      0.86       183
+
+
+['sex', 'nursing_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.96      0.91       154
+        True       0.84      0.58      0.69        53
+
+    accuracy                           0.86       207
+   macro avg       0.85      0.77      0.80       207
+weighted avg       0.86      0.86      0.86       207
+
+
+['sex', 'nursing_diet', 'wtpt4', 'wtpt8', 'rbg4', 'rbg8']
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.81      1.00      0.90       150
+        True       1.00      0.36      0.53        55
+
+    accuracy                           0.83       205
+   macro avg       0.91      0.68      0.71       205
+weighted avg       0.86      0.83      0.80       205
+
+
+['sex', 'nursing_diet', 'wt4', 'wt8', 'wt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'gini', 'max_depth': 7, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.85      0.96      0.91       140
+        True       0.81      0.49      0.61        45
+
+    accuracy                           0.85       185
+   macro avg       0.83      0.73      0.76       185
+weighted avg       0.84      0.85      0.83       185
+
+
+['sex', 'nursing_diet', 'wtpt4', 'wtpt8', 'wtpt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'gini', 'max_depth': 7, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.83      0.94      0.88       140
+        True       0.65      0.40      0.49        43
+
+    accuracy                           0.81       183
+   macro avg       0.74      0.67      0.69       183
+weighted avg       0.79      0.81      0.79       183
+
+
+['sex', 'nursing_diet', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+{'criterion': 'entropy', 'max_depth': 7, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.88      0.94      0.91       154
+        True       0.77      0.62      0.69        53
+
+    accuracy                           0.86       207
+   macro avg       0.82      0.78      0.80       207
+weighted avg       0.85      0.86      0.85       207
+
+
+['sex', 'nursing_diet', 'gestational_diet', 'wtpt4', 'wtpt8', 'rbg4', 'rbg8']
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.81      1.00      0.90       150
+        True       1.00      0.36      0.53        55
+
+    accuracy                           0.83       205
+   macro avg       0.91      0.68      0.71       205
+weighted avg       0.86      0.83      0.80       205
+
+
+['sex', 'nursing_diet', 'gestational_diet', 'wt4', 'wt8', 'wt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'entropy', 'max_depth': 7, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.86      0.97      0.91       140
+        True       0.85      0.51      0.64        45
+
+    accuracy                           0.86       185
+   macro avg       0.86      0.74      0.78       185
+weighted avg       0.86      0.86      0.85       185
+
+
+['sex', 'nursing_diet', 'gestational_diet', 'wtpt4', 'wtpt8', 'wtpt12', 'rbg4', 'rbg8', 'rbg12']
+{'criterion': 'entropy', 'max_depth': 7, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.84      0.99      0.91       140
+        True       0.89      0.40      0.55        43
+
+    accuracy                           0.85       183
+   macro avg       0.87      0.69      0.73       183
+weighted avg       0.85      0.85      0.82       183
+
+
