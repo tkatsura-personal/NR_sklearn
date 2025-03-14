@@ -1,0 +1,491 @@
+['sex', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'gini', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.99      0.93       101
+        True       0.97      0.69      0.80        48
+
+    accuracy                           0.89       149
+   macro avg       0.92      0.84      0.87       149
+weighted avg       0.90      0.89      0.89       149
+
+
+|--- feature_4 <= 136.50
+|   |--- feature_1 <= 43.05
+|   |   |--- feature_2 <= 77.85
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  77.85
+|   |   |   |--- class: False
+|   |--- feature_1 >  43.05
+|   |   |--- feature_1 <= 53.65
+|   |   |   |--- class: False
+|   |   |--- feature_1 >  53.65
+|   |   |   |--- class: True
+|--- feature_4 >  136.50
+|   |--- feature_0 <= 0.50
+|   |   |--- feature_4 <= 249.00
+|   |   |   |--- class: False
+|   |   |--- feature_4 >  249.00
+|   |   |   |--- class: True
+|   |--- feature_0 >  0.50
+|   |   |--- feature_1 <= 22.95
+|   |   |   |--- class: False
+|   |   |--- feature_1 >  22.95
+|   |   |   |--- class: True
+
+
+['sex', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'log_loss', 'max_depth': 5, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.83      1.00      0.91       101
+        True       1.00      0.58      0.74        48
+
+    accuracy                           0.87       149
+   macro avg       0.92      0.79      0.82       149
+weighted avg       0.89      0.87      0.85       149
+
+
+|--- feature_3 <= 85.84
+|   |--- feature_1 <= 0.58
+|   |   |--- feature_5 <= 184.21
+|   |   |   |--- feature_4 <= 139.81
+|   |   |   |   |--- feature_2 <= 42.66
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_2 >  42.66
+|   |   |   |   |   |--- class: False
+|   |   |   |--- feature_4 >  139.81
+|   |   |   |   |--- feature_0 <= 0.58
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_0 >  0.58
+|   |   |   |   |   |--- class: True
+|   |   |--- feature_5 >  184.21
+|   |   |   |--- feature_2 <= 40.41
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_2 >  40.41
+|   |   |   |   |--- class: True
+|   |--- feature_1 >  0.58
+|   |   |--- feature_5 <= 382.49
+|   |   |   |--- feature_3 <= 65.09
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_3 >  65.09
+|   |   |   |   |--- feature_2 <= 33.73
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_2 >  33.73
+|   |   |   |   |   |--- class: False
+|   |   |--- feature_5 >  382.49
+|   |   |   |--- class: True
+|--- feature_3 >  85.84
+|   |--- feature_5 <= 127.41
+|   |   |--- feature_3 <= 95.64
+|   |   |   |--- feature_2 <= 38.38
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_2 >  38.38
+|   |   |   |   |--- feature_5 <= 119.70
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_5 >  119.70
+|   |   |   |   |   |--- class: True
+|   |   |--- feature_3 >  95.64
+|   |   |   |--- feature_3 <= 97.80
+|   |   |   |   |--- class: True
+|   |   |   |--- feature_3 >  97.80
+|   |   |   |   |--- feature_3 <= 99.36
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_3 >  99.36
+|   |   |   |   |   |--- class: False
+|   |--- feature_5 >  127.41
+|   |   |--- feature_1 <= 0.60
+|   |   |   |--- class: True
+|   |   |--- feature_1 >  0.60
+|   |   |   |--- feature_5 <= 340.96
+|   |   |   |   |--- feature_5 <= 231.36
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_5 >  231.36
+|   |   |   |   |   |--- class: True
+|   |   |   |--- feature_5 >  340.96
+|   |   |   |   |--- class: True
+
+
+['sex', 'nursing_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'gini', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.86      0.99      0.92       101
+        True       0.97      0.67      0.79        48
+
+    accuracy                           0.89       149
+   macro avg       0.92      0.83      0.86       149
+weighted avg       0.90      0.89      0.88       149
+
+
+|--- feature_5 <= 136.50
+|   |--- feature_2 <= 43.05
+|   |   |--- feature_3 <= 77.85
+|   |   |   |--- class: False
+|   |   |--- feature_3 >  77.85
+|   |   |   |--- class: False
+|   |--- feature_2 >  43.05
+|   |   |--- feature_2 <= 53.65
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  53.65
+|   |   |   |--- class: True
+|--- feature_5 >  136.50
+|   |--- feature_0 <= 0.50
+|   |   |--- feature_4 <= 110.50
+|   |   |   |--- class: False
+|   |   |--- feature_4 >  110.50
+|   |   |   |--- class: True
+|   |--- feature_0 >  0.50
+|   |   |--- feature_4 <= 48.50
+|   |   |   |--- class: False
+|   |   |--- feature_4 >  48.50
+|   |   |   |--- class: True
+
+
+['sex', 'nursing_diet', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'entropy', 'max_depth': 5, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.86      0.96      0.91       101
+        True       0.89      0.67      0.76        48
+
+    accuracy                           0.87       149
+   macro avg       0.87      0.81      0.83       149
+weighted avg       0.87      0.87      0.86       149
+
+
+|--- feature_3 <= 46.88
+|   |--- feature_3 <= 36.42
+|   |   |--- feature_0 <= 0.59
+|   |   |   |--- feature_4 <= 68.51
+|   |   |   |   |--- feature_4 <= 54.98
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_4 >  54.98
+|   |   |   |   |   |--- class: False
+|   |   |   |--- feature_4 >  68.51
+|   |   |   |   |--- feature_2 <= 0.96
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_2 >  0.96
+|   |   |   |   |   |--- class: False
+|   |   |--- feature_0 >  0.59
+|   |   |   |--- feature_6 <= 312.24
+|   |   |   |   |--- feature_6 <= 246.22
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_6 >  246.22
+|   |   |   |   |   |--- class: True
+|   |   |   |--- feature_6 >  312.24
+|   |   |   |   |--- class: True
+|   |--- feature_3 >  36.42
+|   |   |--- feature_0 <= 0.35
+|   |   |   |--- feature_1 <= 0.59
+|   |   |   |   |--- feature_4 <= 93.33
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_4 >  93.33
+|   |   |   |   |   |--- class: True
+|   |   |   |--- feature_1 >  0.59
+|   |   |   |   |--- class: False
+|   |   |--- feature_0 >  0.35
+|   |   |   |--- feature_6 <= 207.64
+|   |   |   |   |--- feature_3 <= 37.87
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_3 >  37.87
+|   |   |   |   |   |--- class: False
+|   |   |   |--- feature_6 >  207.64
+|   |   |   |   |--- class: True
+|--- feature_3 >  46.88
+|   |--- feature_0 <= 0.95
+|   |   |--- feature_3 <= 56.16
+|   |   |   |--- feature_5 <= 126.88
+|   |   |   |   |--- feature_6 <= 180.96
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_6 >  180.96
+|   |   |   |   |   |--- class: True
+|   |   |   |--- feature_5 >  126.88
+|   |   |   |   |--- class: True
+|   |   |--- feature_3 >  56.16
+|   |   |   |--- class: True
+|   |--- feature_0 >  0.95
+|   |   |--- feature_5 <= 89.09
+|   |   |   |--- feature_4 <= 93.34
+|   |   |   |   |--- feature_3 <= 65.34
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_3 >  65.34
+|   |   |   |   |   |--- class: False
+|   |   |   |--- feature_4 >  93.34
+|   |   |   |   |--- feature_6 <= 221.57
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_6 >  221.57
+|   |   |   |   |   |--- class: True
+|   |   |--- feature_5 >  89.09
+|   |   |   |--- feature_3 <= 57.96
+|   |   |   |   |--- feature_6 <= 274.51
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_6 >  274.51
+|   |   |   |   |   |--- class: True
+|   |   |   |--- feature_3 >  57.96
+|   |   |   |   |--- feature_4 <= 92.89
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_4 >  92.89
+|   |   |   |   |   |--- class: True
+
+
+['sex', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       111
+        True       1.00      0.84      0.91        38
+
+    accuracy                           0.96       149
+   macro avg       0.97      0.92      0.94       149
+weighted avg       0.96      0.96      0.96       149
+
+
+|--- feature_4 <= 151.00
+|   |--- feature_1 <= 43.30
+|   |   |--- feature_1 <= 39.95
+|   |   |   |--- class: False
+|   |   |--- feature_1 >  39.95
+|   |   |   |--- class: False
+|   |--- feature_1 >  43.30
+|   |   |--- feature_1 <= 53.75
+|   |   |   |--- class: False
+|   |   |--- feature_1 >  53.75
+|   |   |   |--- class: True
+|--- feature_4 >  151.00
+|   |--- feature_4 <= 200.00
+|   |   |--- feature_2 <= 85.25
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  85.25
+|   |   |   |--- class: True
+|   |--- feature_4 >  200.00
+|   |   |--- class: True
+
+
+['sex', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       111
+        True       1.00      0.84      0.91        38
+
+    accuracy                           0.96       149
+   macro avg       0.97      0.92      0.94       149
+weighted avg       0.96      0.96      0.96       149
+
+
+|--- feature_5 <= 151.00
+|   |--- feature_2 <= 43.30
+|   |   |--- feature_2 <= 39.95
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  39.95
+|   |   |   |--- class: False
+|   |--- feature_2 >  43.30
+|   |   |--- feature_2 <= 53.75
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  53.75
+|   |   |   |--- class: True
+|--- feature_5 >  151.00
+|   |--- feature_5 <= 200.00
+|   |   |--- feature_2 <= 44.55
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  44.55
+|   |   |   |--- class: True
+|   |--- feature_5 >  200.00
+|   |   |--- class: True
+
+
+['sex', 'nursing_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       111
+        True       1.00      0.84      0.91        38
+
+    accuracy                           0.96       149
+   macro avg       0.97      0.92      0.94       149
+weighted avg       0.96      0.96      0.96       149
+
+
+|--- feature_5 <= 151.00
+|   |--- feature_2 <= 43.30
+|   |   |--- feature_2 <= 39.95
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  39.95
+|   |   |   |--- class: False
+|   |--- feature_2 >  43.30
+|   |   |--- feature_2 <= 53.75
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  53.75
+|   |   |   |--- class: True
+|--- feature_5 >  151.00
+|   |--- feature_5 <= 200.00
+|   |   |--- feature_2 <= 44.55
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  44.55
+|   |   |   |--- class: True
+|   |--- feature_5 >  200.00
+|   |   |--- class: True
+
+
+['sex', 'nursing_diet', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'entropy', 'max_depth': 9, 'splitter': 'random'}
+              precision    recall  f1-score   support
+
+       False       0.92      0.97      0.95       111
+        True       0.91      0.76      0.83        38
+
+    accuracy                           0.92       149
+   macro avg       0.91      0.87      0.89       149
+weighted avg       0.92      0.92      0.92       149
+
+
+|--- feature_3 <= 44.83
+|   |--- feature_6 <= 270.75
+|   |   |--- feature_3 <= 26.63
+|   |   |   |--- feature_3 <= 17.52
+|   |   |   |   |--- feature_0 <= 0.46
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_0 >  0.46
+|   |   |   |   |   |--- feature_4 <= 69.46
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_4 >  69.46
+|   |   |   |   |   |   |--- feature_3 <= 16.28
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- feature_3 >  16.28
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |--- feature_3 >  17.52
+|   |   |   |   |--- class: False
+|   |   |--- feature_3 >  26.63
+|   |   |   |--- feature_4 <= 90.17
+|   |   |   |   |--- feature_5 <= 91.26
+|   |   |   |   |   |--- feature_5 <= 69.12
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_5 >  69.12
+|   |   |   |   |   |   |--- feature_2 <= 0.59
+|   |   |   |   |   |   |   |--- feature_4 <= 77.67
+|   |   |   |   |   |   |   |   |--- feature_4 <= 71.63
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_4 >  71.63
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- feature_4 >  77.67
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- feature_2 >  0.59
+|   |   |   |   |   |   |   |--- feature_5 <= 75.76
+|   |   |   |   |   |   |   |   |--- feature_0 <= 0.71
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_0 >  0.71
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- feature_5 >  75.76
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_5 >  91.26
+|   |   |   |   |   |--- feature_5 <= 123.20
+|   |   |   |   |   |   |--- feature_3 <= 32.39
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- feature_3 >  32.39
+|   |   |   |   |   |   |   |--- feature_1 <= 0.21
+|   |   |   |   |   |   |   |   |--- feature_2 <= 0.15
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_2 >  0.15
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- feature_1 >  0.21
+|   |   |   |   |   |   |   |   |--- feature_5 <= 102.40
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- feature_5 >  102.40
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_5 >  123.20
+|   |   |   |   |   |   |--- class: False
+|   |   |   |--- feature_4 >  90.17
+|   |   |   |   |--- feature_6 <= 106.02
+|   |   |   |   |   |--- feature_1 <= 0.07
+|   |   |   |   |   |   |--- feature_6 <= 73.94
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- feature_6 >  73.94
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_1 >  0.07
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_6 >  106.02
+|   |   |   |   |   |--- class: True
+|   |--- feature_6 >  270.75
+|   |   |--- class: True
+|--- feature_3 >  44.83
+|   |--- feature_6 <= 204.20
+|   |   |--- feature_6 <= 178.04
+|   |   |   |--- feature_6 <= 115.03
+|   |   |   |   |--- feature_3 <= 61.65
+|   |   |   |   |   |--- feature_3 <= 48.67
+|   |   |   |   |   |   |--- feature_6 <= 61.10
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- feature_6 >  61.10
+|   |   |   |   |   |   |   |--- feature_0 <= 0.39
+|   |   |   |   |   |   |   |   |--- feature_4 <= 77.80
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_4 >  77.80
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- feature_0 >  0.39
+|   |   |   |   |   |   |   |   |--- feature_6 <= 79.86
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_6 >  79.86
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_3 >  48.67
+|   |   |   |   |   |   |--- feature_3 <= 51.42
+|   |   |   |   |   |   |   |--- feature_4 <= 61.68
+|   |   |   |   |   |   |   |   |--- feature_6 <= 87.16
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_6 >  87.16
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- feature_4 >  61.68
+|   |   |   |   |   |   |   |   |--- feature_0 <= 0.78
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_0 >  0.78
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- feature_3 >  51.42
+|   |   |   |   |   |   |   |--- feature_3 <= 52.22
+|   |   |   |   |   |   |   |   |--- feature_5 <= 94.67
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_5 >  94.67
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- feature_3 >  52.22
+|   |   |   |   |   |   |   |   |--- feature_3 <= 57.81
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- feature_3 >  57.81
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_3 >  61.65
+|   |   |   |   |   |--- feature_6 <= 60.40
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_6 >  60.40
+|   |   |   |   |   |   |--- feature_3 <= 67.92
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- feature_3 >  67.92
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |--- feature_6 >  115.03
+|   |   |   |   |--- feature_2 <= 0.34
+|   |   |   |   |   |--- feature_6 <= 127.37
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- feature_6 >  127.37
+|   |   |   |   |   |   |--- feature_6 <= 143.86
+|   |   |   |   |   |   |   |--- feature_5 <= 92.13
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- feature_5 >  92.13
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- feature_6 >  143.86
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_2 >  0.34
+|   |   |   |   |   |--- feature_5 <= 70.08
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_5 >  70.08
+|   |   |   |   |   |   |--- class: True
+|   |   |--- feature_6 >  178.04
+|   |   |   |--- class: True
+|   |--- feature_6 >  204.20
+|   |   |--- class: True
+
+

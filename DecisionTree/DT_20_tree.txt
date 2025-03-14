@@ -1,0 +1,160 @@
+['sex', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'entropy', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       111
+        True       1.00      0.84      0.91        38
+
+    accuracy                           0.96       149
+   macro avg       0.97      0.92      0.94       149
+weighted avg       0.96      0.96      0.96       149
+
+
+|--- feature_4 <= 151.00
+|   |--- feature_1 <= 43.30
+|   |   |--- feature_1 <= 39.95
+|   |   |   |--- class: False
+|   |   |--- feature_1 >  39.95
+|   |   |   |--- class: False
+|   |--- feature_1 >  43.30
+|   |   |--- feature_1 <= 53.75
+|   |   |   |--- class: False
+|   |   |--- feature_1 >  53.75
+|   |   |   |--- class: True
+|--- feature_4 >  151.00
+|   |--- feature_4 <= 200.00
+|   |   |--- feature_1 <= 44.55
+|   |   |   |--- class: False
+|   |   |--- feature_1 >  44.55
+|   |   |   |--- class: True
+|   |--- feature_4 >  200.00
+|   |   |--- class: True
+
+
+['sex', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'log_loss', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       111
+        True       1.00      0.84      0.91        38
+
+    accuracy                           0.96       149
+   macro avg       0.97      0.92      0.94       149
+weighted avg       0.96      0.96      0.96       149
+
+
+|--- feature_5 <= 151.00
+|   |--- feature_2 <= 43.30
+|   |   |--- feature_2 <= 39.95
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  39.95
+|   |   |   |--- class: False
+|   |--- feature_2 >  43.30
+|   |   |--- feature_2 <= 53.75
+|   |   |   |--- class: False
+|   |   |--- feature_2 >  53.75
+|   |   |   |--- class: True
+|--- feature_5 >  151.00
+|   |--- feature_5 <= 200.00
+|   |   |--- feature_3 <= 85.25
+|   |   |   |--- class: False
+|   |   |--- feature_3 >  85.25
+|   |   |   |--- class: True
+|   |--- feature_5 >  200.00
+|   |   |--- class: True
+
+
+['sex', 'nursing_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'log_loss', 'max_depth': 5, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.95      0.98      0.96       111
+        True       0.94      0.84      0.89        38
+
+    accuracy                           0.95       149
+   macro avg       0.94      0.91      0.93       149
+weighted avg       0.95      0.95      0.95       149
+
+
+|--- feature_5 <= 151.00
+|   |--- feature_2 <= 43.30
+|   |   |--- feature_2 <= 39.95
+|   |   |   |--- feature_5 <= 81.50
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_5 >  81.50
+|   |   |   |   |--- feature_3 <= 65.15
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_3 >  65.15
+|   |   |   |   |   |--- class: False
+|   |   |--- feature_2 >  39.95
+|   |   |   |--- feature_3 <= 51.65
+|   |   |   |   |--- feature_4 <= 99.00
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_4 >  99.00
+|   |   |   |   |   |--- class: False
+|   |   |   |--- feature_3 >  51.65
+|   |   |   |   |--- feature_2 <= 41.25
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_2 >  41.25
+|   |   |   |   |   |--- class: False
+|   |--- feature_2 >  43.30
+|   |   |--- feature_2 <= 53.75
+|   |   |   |--- feature_5 <= 116.00
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_5 >  116.00
+|   |   |   |   |--- feature_2 <= 50.90
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_2 >  50.90
+|   |   |   |   |   |--- class: False
+|   |   |--- feature_2 >  53.75
+|   |   |   |--- feature_3 <= 73.85
+|   |   |   |   |--- class: True
+|   |   |   |--- feature_3 >  73.85
+|   |   |   |   |--- feature_5 <= 57.50
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_5 >  57.50
+|   |   |   |   |   |--- class: True
+|--- feature_5 >  151.00
+|   |--- feature_5 <= 200.00
+|   |   |--- feature_3 <= 85.25
+|   |   |   |--- feature_4 <= 72.50
+|   |   |   |   |--- class: True
+|   |   |   |--- feature_4 >  72.50
+|   |   |   |   |--- class: False
+|   |   |--- feature_3 >  85.25
+|   |   |   |--- class: True
+|   |--- feature_5 >  200.00
+|   |   |--- class: True
+
+
+['sex', 'nursing_diet', 'gestational_diet', 'wt4', 'wt8', 'rbg4', 'rbg8']
+745
+{'criterion': 'log_loss', 'max_depth': 3, 'splitter': 'best'}
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       111
+        True       1.00      0.84      0.91        38
+
+    accuracy                           0.96       149
+   macro avg       0.97      0.92      0.94       149
+weighted avg       0.96      0.96      0.96       149
+
+
+|--- feature_6 <= 151.00
+|   |--- feature_3 <= 53.75
+|   |   |--- class: False
+|   |--- feature_3 >  53.75
+|   |   |--- class: True
+|--- feature_6 >  151.00
+|   |--- feature_6 <= 200.00
+|   |   |--- feature_3 <= 44.55
+|   |   |   |--- class: False
+|   |   |--- feature_3 >  44.55
+|   |   |   |--- class: True
+|   |--- feature_6 >  200.00
+|   |   |--- class: True
+
+
