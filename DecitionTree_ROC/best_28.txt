@@ -1,0 +1,51 @@
+{'criterion': 'log_loss', 'max_depth': 4, 'splitter': 'best'}
+wt4 (feature_0):    0.25446603
+wt8:                0.07075491
+rbg4 (feature_2):   0.05065921
+rbg8:               0.62411986
+
+|--- feature_3 <= 151.00
+|   |--- feature_0 <= 43.95
+|   |   |--- feature_1 <= 76.90
+|   |   |   |--- feature_2 <= 93.50
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_2 >  93.50
+|   |   |   |   |--- class: False
+|   |   |--- feature_1 >  76.90
+|   |   |   |--- feature_2 <= 83.50
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_2 >  83.50
+|   |   |   |   |--- class: False
+|   |--- feature_0 >  43.95
+|   |   |--- feature_0 <= 53.65
+|   |   |   |--- feature_3 <= 116.00
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_3 >  116.00
+|   |   |   |   |--- class: True
+|   |   |--- feature_0 >  53.65
+|   |   |   |--- feature_1 <= 73.85
+|   |   |   |   |--- class: True
+|   |   |   |--- feature_1 >  73.85
+|   |   |   |   |--- class: True
+|--- feature_3 >  151.00
+|   |--- feature_3 <= 200.00
+|   |   |--- feature_1 <= 85.25
+|   |   |   |--- feature_0 <= 46.45
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_0 >  46.45
+|   |   |   |   |--- class: True
+|   |   |--- feature_1 >  85.25
+|   |   |   |--- class: True
+|   |--- feature_3 >  200.00
+|   |   |--- class: True
+
+              precision    recall  f1-score   support
+
+       False       0.90      1.00      0.94       103
+        True       1.00      0.74      0.85        46
+
+    accuracy                           0.92       149
+   macro avg       0.95      0.87      0.90       149
+weighted avg       0.93      0.92      0.92       149
+
+model 1 AUC score: 0.8695652173913043

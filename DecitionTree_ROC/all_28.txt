@@ -1,0 +1,73 @@
+{'criterion': 'entropy', 'max_depth': 6, 'splitter': 'random'}
+sex (feature_0):    0.02369696
+gestational_diet:   0.00774924
+nursing_diet:       0.12344678
+wt4 (feature_3):    0.03538305
+wt8:                0.02111629
+wt12:               0.13504812
+rbg4 (feature_6):   0.
+rbg8:               0.20173178
+rbg12 (feature_8):  0.45182779
+rbg200_fa:          0.
+rbg200_mo:          0.
+
+|--- feature_8 <= 258.55
+|   |--- feature_7 <= 169.41
+|   |   |--- feature_2 <= 0.64
+|   |   |   |--- feature_5 <= 88.82
+|   |   |   |   |--- feature_0 <= 0.61
+|   |   |   |   |   |--- feature_4 <= 65.29
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_4 >  65.29
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_0 >  0.61
+|   |   |   |   |   |--- class: False
+|   |   |   |--- feature_5 >  88.82
+|   |   |   |   |--- feature_4 <= 71.09
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_4 >  71.09
+|   |   |   |   |   |--- feature_5 <= 118.62
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_5 >  118.62
+|   |   |   |   |   |   |--- class: True
+|   |   |--- feature_2 >  0.64
+|   |   |   |--- feature_5 <= 104.72
+|   |   |   |   |--- feature_3 <= 37.89
+|   |   |   |   |   |--- feature_5 <= 77.15
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_5 >  77.15
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- feature_3 >  37.89
+|   |   |   |   |   |--- feature_8 <= 139.86
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_8 >  139.86
+|   |   |   |   |   |   |--- class: True
+|   |   |   |--- feature_5 >  104.72
+|   |   |   |   |--- feature_7 <= 99.31
+|   |   |   |   |   |--- feature_3 <= 49.98
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- feature_3 >  49.98
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- feature_7 >  99.31
+|   |   |   |   |   |--- class: True
+|   |--- feature_7 >  169.41
+|   |   |--- feature_0 <= 0.96
+|   |   |   |--- feature_1 <= 0.23
+|   |   |   |   |--- class: False
+|   |   |   |--- feature_1 >  0.23
+|   |   |   |   |--- class: True
+|   |   |--- feature_0 >  0.96
+|   |   |   |--- class: True
+|--- feature_8 >  258.55
+|   |--- class: True
+
+              precision    recall  f1-score   support
+
+       False       0.85      0.96      0.90        98
+        True       0.83      0.53      0.64        36
+
+    accuracy                           0.84       134
+   macro avg       0.84      0.74      0.77       134
+weighted avg       0.84      0.84      0.83       134
+
+model 1 AUC score: 0.7434807256235827
